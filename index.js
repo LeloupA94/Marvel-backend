@@ -7,8 +7,6 @@ const express = require("express");
 
 const cors = require("cors");
 
-const mongoose = require("mongoose");
-
 const axios = require("axios");
 
 const app = express();
@@ -16,8 +14,6 @@ const app = express();
 app.use(cors());
 
 app.use(express.json());
-
-mongoose.connect("mongodb://localhost/marvel-project");
 
 //import de mes routes
 
